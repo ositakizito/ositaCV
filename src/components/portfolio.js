@@ -20,7 +20,7 @@ export default function Portfolio() {
                         ></motion.div>
                     </div>
                     <div className="framer">
-                        <iframe title="spot" src="">
+                        <iframe title="spot" src="https://netflixclone-pi.vercel.app/">
                             
                         </iframe>
                        <div className="frameTitle">
