@@ -1,13 +1,387 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Tangerine:wght@700&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --bgColor: #e0e2e7;
+  --white: #fff;
+  --button: #eb4c67;
+  --botttom: #5038b8;
+  --textHead: #1d1f2a;
+  --text: #d6d6dd;
+  --touchColor: #b4bad4;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bgColor);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header{
+  background-color: var(--white);
+  border-radius: 5px;
+  margin: 10px;
+
+}
+.header .header-author{
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.header .header-author .image img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-top: 5px;
+}
+.header .header-author .image{
+  padding: 8px;
+  border-radius: 8px;
+} 
+.header .name-top{
+  padding: 10px;
+}
+.header .name-top .co{
+ margin-top: 7px;
+}
+.header .name-top .co p{
+ font-size: 16px;
+ font-weight: 700;
+ color: var(--textHead);
+}
+.header .name-top .co.sk p{
+ font-size: 12px;
+ font-weight: normal;
+ color: var(--textHead);
+}
+.about{
+  margin: 10px;
+  padding: 5px 8px;
+  background-color: var(--white);
+  border-radius: 5px;
+
+}
+
+.about .about-top{
+  padding: 10px 0px;
+}
+.about .about-top p{
+  font-size: 18px;
+  padding: 5px;
+  color: var(--textHead);
+  font-weight: 700;
+}
+.about .about-top div {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  margin-left: 5px;
+  border-radius: 10px;
+  background-color: var(--botttom);
+}
+.about .about-content{
+  margin: 10px 0px;
+  
+}
+.about .about-content p{
+  color: var(--textHead);
+  font-size: 12px;
+  line-height: 18px;
+}
+.main{
+  margin-bottom: 55px;
+ 
+}
+.bottom{
+  background-color: var(--botttom);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0px 10px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+ 
+}
+.bottom .bottomtab{
+  display: flex;
+  justify-content: space-between;
+
+}
+.bottom .bottomtab .tabs{
+  flex: 1;
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.bottom .bottomtab .tabs button{
+  border: none;
+  outline: none;
+  background-color: unset;
+  border-radius: 4px;
+}
+.bottom .bottomtab .tabs:hover{
+  background-color: #685abd;
+  border-radius: 10px;
+}
+.bottom .bottomtab .tabs button i{
+  margin-bottom: 4px;
+  color: var(--white);
+  font-size: 12px;
+}
+.bottom .bottomtab .tabs button p{
+  color: var(--white);
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+.webSkills{
+  background-color: var(--white);
+  padding: 10px 8px;
+  margin: 0px 2px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2), 
+  0 6px 20px 0 rgba(0,0,0, 0);
+}
+.webSkills .webcontent{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+
+}
+.webSkills .webcontent .imgcontent img{
+  /* width: ;   */
+  padding: 5px 2px;
+}
+.webSkills .webcontent .webname{
+ padding: 5px;
+}
+.webSkills .webcontent .webname.web p{
+ font-size: 18px;
+ font-weight: 700;
+ color: var(--textHead);
+}
+.webSkills .webcontent .webname p{
+ font-size: 12px;
+ text-align: left;
+ text-overflow:clip;
+ line-height: 15px;
+}
+.contact{
+  margin-bottom: 55px;
+}
+.contact .button{
+ margin-top: 20px;
+ 
+}
+.contact .about button{
+   display: flex;
+   justify-content: center;
+   width: 90%;
+   margin: 10px auto;
+   padding: 10px 5px;
+   border: none;
+   outline: none;
+   font-size: 13px;
+   font-weight: 700;
+   text-align: center;
+   border-radius: 5px;
+   color: var(--white);
+   background-color: var(--botttom);
+}
+.contact .about button i{
+  font-size: 17px;
+  margin-right: 5px;
+}
+.contact .about button p{
+  font-family: 'Poppins', sans-serif;
+ 
+}
+.portfolio{
+  margin-bottom: 55px;
+  background-color: unset;
+}
+.portfolio .framer{
+ margin: 15px 0px;
+ /* border: 1px solid var(--textHead); */
+}
+.portfolio .framer iframe{
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+
+}
+.portfolio .framer .frameTitle{
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--textHead);
+  padding: 5px 6px;
+}
+.portfolio .framer .frameTitle.Ti{
+  font-size: 12px;
+  font-weight: normal;
+}
+.resume .education{
+  /* background-color: red; */
+  margin-top: 15px;
+}
+.resume .education .ribbon{
+  /* background-color: red; */
+  display: flex;
+}
+.resume .education .ribbon .ic{
+  /* background-color: green; */
+  padding: 0px 5px;
+}
+.resume .education .ribbon .ic i{
+  background-color: var(--white);
+  padding: 6.5px 6px;
+  width: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2), 
+  0 6px 20px 0 rgba(0,0,0, 0.1);
+  text-align: center;
+  height: 30px;
+  border-radius: 50px;
+  color: var(--botttom);
+}
+.resume .education .ribbon .line{
+  content: '';
+  position: relative;
+  background-color: var(--botttom);
+  width: 1px;
+  margin: 0px 14px;
+  height: 70px;
+}
+.resume .education .ribbon .line.two{
+  content: '';
+  position: relative;
+  background-color: var(--botttom);
+  width: 1px;
+  margin: 0px 14px;
+  height: 70px;
+}
+.resume .education .ribbon .lineCircle{
+  content: '';
+  position: relative;
+  background-color: var(--text);
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+.resume .education .ribbon .lineCircle.top{
+  content: '';
+  position: relative;
+  background-color: var(--text);
+  width: 15px;
+  height: 15px;
+  margin: -120px auto;
+  border-radius: 50px;
+}
+.resume .education .ribbon .lineCircle .circle{
+  content: '';
+  position: absolute;
+  background-color: var(--botttom);
+  width: 8px;
+  height: 8px;
+  margin-top: 3px;
+  margin-left: 3px;
+  border-radius: 50px;
+}
+.resume{
+  margin-bottom: 55px;
+}
+.resume .education .ribbon .educontent{
+  padding: 5px 5px ;
+}
+.resume .education .ribbon .educontent .eduTitle {
+  font-size: 14px;
+  color: var(--botttom);
+}
+.resume .education .ribbon .educontent .eduTitle .ed{
+ font-size: 18px;
+ color: var(--textHead);
+ font-weight: 700;
+}
+.resume .education .ribbon .educontent .eduTitle .un{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--textHead);
+}
+.resume .education .ribbon .educontent .eduTitle .hs{
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--textHead);
+}
+.webSkills .webcontent .lang{
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+}
+.webSkills .webcontent .lang .weblang{
+  padding: 5px;
+  font-size: 12px;
+  color: var(--textHead);
+}
+.webSkills .webcontent .lang .webprogress .pro{
+  background-color: var(--text);
+  width: 100%;
+  content: '';
+  position: relative;
+
+  border-radius: 10px;
+  height: 8px;
+}
+.webSkills .webcontent .lang .webprogress .pro.html{
+   width: 90%;
+   background-color: var(--botttom);
+}
+.webSkills .webcontent .lang .webprogress .pro.css{
+   width: 95%;
+   background-color: var(--botttom);
+}
+.webSkills .webcontent .lang .webprogress .pro.javascript{
+   width: 65%;
+   background-color: var(--botttom);
+}
+.webSkills .webcontent .lang .webprogress .pro.react{
+   width: 75%;
+   background-color: var(--botttom);
+}
+.webSkills .webcontent .lang .webprogress .pro.reactN{
+   width: 50%;
+   background-color: var(--botttom);
+}
+.webSkills .webcontent .lang .webprogress .pro.flutter{
+   width: 40%;
+   background-color: var(--botttom);
+}
+.webSkills .webcontent .lang .webprogress .pro.python{
+   width: 60%;
+   background-color: var(--botttom);
+}
+.webSkills .webcontent .lang .webprogress .pro.json{
+   width: 40%;
+   background-color: var(--botttom);
+}
+.webSkills .webcontent .lang .webprogress .pro.git{
+   width: 55%;
+   background-color: var(--botttom);
+}
+.webSkills .webcontent .lang .webprogress .pro.api{
+   width: 35%;
+   background-color: var(--botttom);
 }
