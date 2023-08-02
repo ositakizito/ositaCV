@@ -43,7 +43,7 @@ export default function Portfolio() {
                         </div>
                     </div>
                     <div className="framer">
-                        <iframe title="spot2" src="">
+                        <iframe title="spot2" src="https://spotafrica.vercel.app/">
                             
                         </iframe>
                        <div className="frameTitle">
