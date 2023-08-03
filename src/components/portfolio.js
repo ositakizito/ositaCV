@@ -30,19 +30,7 @@ export default function Portfolio() {
                          <p>Web Development - Build with Reactjs</p>                       
                         </div>
                     </div>
-                    
-                    <div className="framer">
-                        <iframe title="spot1" src="">
-                            
-                        </iframe>
-                       <div className="frameTitle">
-                         <p>Cryptoniche, A crypto investment site</p>
-                       </div>
-                       <div className="frameTitle Ti">
-                         <p>Web Development - Build with HTML & CSS</p>                       
-                        </div>
-                    </div>
-                    <div className="framer">
+                       <div className="framer">
                         <iframe title="spot2" src="https://spotafrica.vercel.app/">
                             
                         </iframe>
@@ -53,6 +41,18 @@ export default function Portfolio() {
                          <p>Web Development - Build with HTML & CSS</p>                       
                         </div>
                     </div>
+                    <div className="framer">
+                        <iframe title="spot1" src="https://ositakizito.github.io/fcmb/">
+                            
+                        </iframe>
+                       <div className="frameTitle">
+                         <p>FCMB clone</p>
+                       </div>
+                       <div className="frameTitle Ti">
+                         <p>Web Development - Build with HTML & CSS</p>                       
+                        </div>
+                    </div>
+                 
                     
                 </div>
             </div>
