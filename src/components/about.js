@@ -38,7 +38,7 @@ export default function About() {
                >
                    <p >
                    HI, I'm Christopher Osita, a skilled developer with expertise in HTML, CSS, JavaScript, Reactjs and React-Native with over 3years of experience.
-                   My achievement as a developer, I develop a business site "Spot Incorporations" and a "crypto investment platform" user interface, also a clone of original known companies like Netflix,Fcmb,etc
+                   My achievement as a developer, I develop a business site "Spot Incorporations" user interface, also a clone of original known companies like Netflix,Fcmb,etc
                   </p>
                   <p style={{marginTop: '7px'}}>
                   At the year 2020, I got inspired by google, facebook, content creators and bloggers. Google and facebook got my attention the most, build a useful tools to keep track of victims affected by COVID-19. 
